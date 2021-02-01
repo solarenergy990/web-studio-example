@@ -34,6 +34,11 @@
   margin-right: auto;
   margin-bottom: 30px;
   max-width: 696px;
+  @media screen and (max-width: 1199px) {
+    font-size: 26px;
+    line-height: 1.6;
+    max-width: 360px;
+  }
 }
 .hero__button {
   background-color: $accent;

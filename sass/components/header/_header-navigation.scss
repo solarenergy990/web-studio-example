@@ -1,15 +1,15 @@
-.navigation {
-  display: flex;
-}
+// .navigation {
+//   display: flex;
+// }
 
-.navigation__menu {
-  display: flex;
-  align-items: center;
-}
+// .navigation__menu {
+//   display: flex;
+//   align-items: center;
+// }
 
-.navigation__item:not(:last-child) {
-  margin-right: 50px;
-}
+// .navigation__item:not(:last-child) {
+//   margin-right: 50px;
+// }
 
 .navigation__link {
   color: $secondary-text-colour;
@@ -19,8 +19,8 @@
   line-height: 1.1;
   letter-spacing: 0.02em;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
   align-items: center;
   position: relative;
   &:active,

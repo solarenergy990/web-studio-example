@@ -2,10 +2,10 @@
 .our-team {
   background-color: $secondary-background-colour;
 }
-.our-team__portraits {
-  display: flex;
-  align-items: center;
-}
+// .our-team__portraits {
+//   display: flex;
+//   align-items: center;
+// }
 
 .our-team__card {
   background: $main-white;
@@ -19,6 +19,7 @@
 
 .our-team__image {
   margin-bottom: 30px;
+  width: 270px;
 }
 .our-team__title {
   color: $title-text-colour;

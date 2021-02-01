@@ -1,5 +1,10 @@
 /*what do we do*/
 .service {
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+.service__list {
   display: flex;
   justify-content: center;
 }

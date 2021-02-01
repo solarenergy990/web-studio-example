@@ -1,15 +1,15 @@
-.contacts {
-  margin-left: auto;
-}
+// .contacts {
+//   margin-left: auto;
+// }
 
-.contacts__item {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
-}
+// .contacts__item {
+//   display: inline-flex;
+//   align-items: center;
+//   justify-content: center;
+//   &:not(:last-child) {
+//     margin-right: 50px;
+//   }
+// }
 
 .contacts__link {
   color: $primary-text-colour;
@@ -21,8 +21,8 @@
   letter-spacing: 0.02em;
 
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
   align-items: center;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
