@@ -8,3 +8,17 @@
   display: flex;
   align-items: center;
 }
+.header__logo {
+  color: $secondary-text-colour;
+  text-decoration: none;
+  font-family: $secondary-font-family;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: $primary-line-height;
+  letter-spacing: 0.03em;
+
+  display: block;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
