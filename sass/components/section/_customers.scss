@@ -1,15 +1,36 @@
 /*customers*/
-// .customers {
-//   display: flex;
-// }
-.customers-item:not(:last-child) {
-  margin-right: 30px;
+
+.customers {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+  }
+}
+.customers-item {
+  &:not(:last-child) {
+    @media screen and (max-width: 479px) {
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 6 * 30px) / 6);
+    margin: 15px;
+  }
 }
 
 .customers__icon {
   padding: 0;
   border: 1px solid $primary-icon-colour;
-  width: 170px;
   height: 90px;
   fill: $primary-icon-colour;
 

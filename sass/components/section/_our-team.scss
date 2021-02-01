@@ -33,17 +33,12 @@
     margin: 15px;
   }
 }
-
+.our-team__thumb {
+  width: 100%;
+}
 .our-team__image {
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 354px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-  }
+  display: block;
+  width: 100%;
 }
 .our-team__meta {
   padding: 30px 32px;
@@ -78,7 +73,6 @@
 .social-network {
   display: flex;
   justify-content: center;
-  // padding-bottom: 30px;
 }
 .social-network__item:not(:last-child) {
   margin-right: 10px;

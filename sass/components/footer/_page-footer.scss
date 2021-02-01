@@ -3,13 +3,24 @@
   background-color: $hero-footer-colour;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
-// .footer__banner {
-//   display: flex;
-//   align-items: baseline;
-// }
+.footer__banner {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 .footer__address {
-  margin-right: 70px;
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 .footer__logo {
   color: $main-white;

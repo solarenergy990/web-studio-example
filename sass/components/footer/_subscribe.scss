@@ -1,5 +1,8 @@
 .subscribe {
   margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    min-width: 570px;
+  }
 }
 
 .subscribe__title {
@@ -17,14 +20,25 @@
   display: block;
 }
 .subscribe__label {
-  display: flex;
+  display: block;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .subscribe__input {
-  display: flex;
-  margin: 0;
-  margin-right: 12px;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 15px 16px;
-  width: 358px;
+  max-width: 450px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+    // min-width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -67,6 +81,10 @@
   padding: 10px 29px;
   display: flex;
   cursor: pointer;
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .subscribe__text {

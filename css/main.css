@@ -1081,22 +1081,13 @@ ul {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .our-team__image {
-    width: 450px;
-  }
+.our-team__thumb {
+  width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .our-team__image {
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .our-team__image {
-    width: 270px;
-  }
+.our-team__image {
+  display: block;
+  width: 100%;
 }
 
 .our-team__meta {
@@ -1169,14 +1160,50 @@ ul {
 }
 
 /*customers*/
-.customers-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .customers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: -15px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .customers-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .customers-item {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers-item {
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers-item {
+    width: calc((100% - 6 * 30px) / 6);
+    margin: 15px;
+  }
 }
 
 .customers__icon {
   padding: 0;
   border: 1px solid #afb1b8;
-  width: 170px;
   height: 90px;
   fill: #afb1b8;
   background-position: center;
@@ -1355,8 +1382,33 @@ ul {
   padding-bottom: 60px;
 }
 
-.footer__address {
-  margin-right: 70px;
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__address {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    margin-right: 70px;
+  }
 }
 
 .footer__logo {
@@ -1445,6 +1497,12 @@ ul {
   margin-left: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    min-width: 570px;
+  }
+}
+
 .subscribe__title {
   margin-top: 0;
   margin-bottom: 20px;
@@ -1460,19 +1518,24 @@ ul {
 }
 
 .subscribe__label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .subscribe__input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-  margin-right: 12px;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 15px 16px;
-  width: 358px;
+  max-width: 450px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1484,6 +1547,18 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe__input {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    margin-right: 12px;
+  }
 }
 
 .subscribe__input::-webkit-input-placeholder {
@@ -1542,6 +1617,13 @@ ul {
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .subscribe__text {
