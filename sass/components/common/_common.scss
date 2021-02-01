@@ -66,4 +66,10 @@ ul {
   letter-spacing: 0.03em;
 
   margin-bottom: 50px;
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 1.2;
+
+    margin-bottom: 30px;
+  }
 }

@@ -2,10 +2,14 @@
 .our-team {
   background-color: $secondary-background-colour;
 }
-// .our-team__portraits {
-//   display: flex;
-//   align-items: center;
-// }
+.our-team__portraits {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+  }
+}
 
 .our-team__card {
   background: $main-white;
@@ -13,13 +17,36 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   &:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
   }
 }
 
 .our-team__image {
-  margin-bottom: 30px;
-  width: 270px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+.our-team__meta {
+  padding: 30px 32px;
 }
 .our-team__title {
   color: $title-text-colour;
@@ -44,12 +71,14 @@
   text-align: center;
   letter-spacing: 0.03em;
   font-weight: $primary-text-weight;
+
+  margin-top: 0;
 }
 /*social network*/
 .social-network {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+  // padding-bottom: 30px;
 }
 .social-network__item:not(:last-child) {
   margin-right: 10px;
