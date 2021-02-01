@@ -1,0 +1,31 @@
+/*customers*/
+.customers {
+  display: flex;
+}
+.customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers__icon {
+  padding: 0;
+  border: 1px solid $primary-icon-colour;
+  width: 170px;
+  height: 90px;
+  fill: $primary-icon-colour;
+
+  background-position: center;
+  background-color: $main-white;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $accent;
+    border: 1px solid $accent;
+  }
+}

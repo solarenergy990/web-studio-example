@@ -1,0 +1,45 @@
+/*footer address*/
+.footer {
+  background-color: $hero-footer-colour;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__banner {
+  display: flex;
+  align-items: baseline;
+}
+.footer__address {
+  margin-right: 70px;
+}
+.footer__logo {
+  color: $main-white;
+
+  margin-bottom: 20px;
+  margin-right: 0;
+  padding: 0;
+}
+
+.footer__coordinates {
+  color: $main-white;
+
+  font-weight: $primary-text-weight;
+  font-size: $primary-text-size;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  font-style: inherit;
+
+  margin-bottom: 9px;
+}
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__link {
+  color: $footer-link-colour;
+
+  text-decoration: none;
+  font-weight: $primary-text-weight;
+  font-size: $primary-text-size;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}

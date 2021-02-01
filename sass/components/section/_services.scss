@@ -1,0 +1,38 @@
+/*what do we do*/
+.service {
+  display: flex;
+  justify-content: center;
+}
+
+.service__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.service__thumb {
+  position: relative;
+}
+
+.service__image {
+  display: block;
+}
+
+.service__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background: rgba(47, 48, 58, 0.8);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+
+  font-weight: 700;
+  font-size: $primary-text-size;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-white;
+}

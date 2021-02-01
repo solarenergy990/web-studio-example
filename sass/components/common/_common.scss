@@ -1,0 +1,57 @@
+/*common adjustment and defaults discard*/
+body {
+  background-color: $main-white;
+  font-family: $primary-font-family;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $secondary-text-colour;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+.list {
+  list-style: none;
+  padding-inline-start: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: $primary-line-height;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}

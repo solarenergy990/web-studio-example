@@ -1,0 +1,211 @@
+.backdrop {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop__is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+/*BEM is not working here in case of popup menu made via JS*/
+.backdrop__is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  min-width: 528px;
+  min-height: 581px;
+
+  background: $main-white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.form {
+  padding: 40px;
+}
+.form__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+
+  font-family: inherit;
+  font-weight: $rare-text-weight;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.form__item {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.form__label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &:focus-within .form__icon,
+  &:hover .form__icon {
+    fill: $accent;
+  }
+}
+
+.form__name {
+  display: flex;
+  margin-bottom: 4px;
+  color: $primary-text-colour;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+.form__field {
+  position: relative;
+  display: flex;
+}
+.form__input {
+  margin: 0;
+  padding: 10px 41px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  &:focus,
+  &:hover {
+    border: 1px solid $accent;
+    outline: transparent;
+  }
+  &::placeholder {
+    font-family: inherit;
+    font-weight: $primary-text-weight;
+    font-size: $primary-text-size;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.form__icon {
+  position: absolute;
+  left: 12px;
+  bottom: 50%;
+  transform: translateY(50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+}
+
+.textarea {
+  resize: none;
+  padding: 12px 16px;
+}
+.agreement {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.agreement__checkbox {
+  position: absolute;
+  &:checked ~ .agreement__icon {
+    border-color: transparent;
+    background-color: $accent;
+    background-image: url(../images/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+}
+
+.agreement__text {
+  display: flex;
+
+  color: $primary-text-colour;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $primary-text-size;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.agreement__conditions {
+  color: $accent;
+}
+
+.agreement__icon {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+
+  border: 2px solid $secondary-text-colour;
+  border-radius: 2px;
+}
+
+.submit-button {
+  background-color: $accent;
+  color: $main-white;
+
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: $rare-text-weight;
+  font-size: $secondary-text-size;
+  line-height: 1.9;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  border-style: unset;
+  border-radius: 4px;
+  padding: 10px 55px;
+  display: block;
+  cursor: pointer;
+
+  margin: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.form__close-button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+
+  background-color: $main-white;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: block;
+  cursor: pointer;
+  &:active,
+  &:hover,
+  &:focus {
+    fill: $accent;
+  }
+}

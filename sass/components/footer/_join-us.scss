@@ -1,0 +1,43 @@
+.social__title {
+  font-weight: 700;
+  font-size: $primary-text-size;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $main-white;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.solcial__list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.solcial__item:not(:last-child) {
+  margin-right: 10px;
+}
+.solcial__icon {
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
+  fill: $main-white;
+
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $main-white;
+    background-color: $accent;
+  }
+}
