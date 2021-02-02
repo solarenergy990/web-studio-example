@@ -15,38 +15,52 @@
         <!-- main navigation-->
         <div class="container header__container">
             <a lang="en" href="/" class="header__logo"><span class="part-web">Web</span>Studio</a>
-            <nav class="navigation">
-                <ul class="navigation__menu list">
-                    <li class="navigation__item">
-                        <a href="./index.html" class="navigation__link navigation__link--current"
-                            aria-current="page">Студия</a>
+            <button type="button" class="header__button is-open" aria-expanded="false" data-menu-button>
+                <svg class="header__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="header__icon--open" href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                    <use class="header__icon--close" href="./images/symbol-defs.svg#icon-close_40px"></use>
+                </svg>
+            </button>
+            <div class="header__menu is-open">
+                <nav class="navigation">
+                    <ul class="navigation__menu list">
+                        <li class="navigation__item">
+                            <a href="./index.html" class="navigation__link navigation__link--current"
+                                aria-current="page">Студия</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="./portfolio.html" class="navigation__link" aria-current="false">Портфолио</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link" aria-current="false">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="contacts list">
+                    <li class="contacts__item">
+                        <a href="mailto:info@devstudio.com" class="contacts__link contacts__link--mail">
+                            <svg class="contacts__icon-envelope" width="16" height="12">
+                                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
                     </li>
-                    <li class="navigation__item">
-                        <a href="./portfolio.html" class="navigation__link" aria-current="false">Портфолио</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link" aria-current="false">Контакты</a>
+                    <li class="contacts__item">
+                        <a href="tel:+380961111111" class="contacts__link contacts__link--tel">
+                            <svg class="contacts__icon-phone" width="10" height="16">
+                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
                     </li>
                 </ul>
-            </nav>
-            <ul class="contacts list">
-                <li class="contacts__item">
-                    <a href="mailto:info@devstudio.com" class="contacts__link">
-                        <svg class="contacts__icon-envelope" width="16" height="12">
-                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts__item">
-                    <a href="tel:+380961111111" class="contacts__link">
-                        <svg class="contacts__icon-phone" width="10" height="16">
-                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+                <ul class="network list">
+                    <li class="network__item"><a href="Instagram.com">Instagram</a></li>
+                    <li class="network__item"><a href="Twitter.com">Twitter</a></li>
+                    <li class="network__item"><a href="Facebook.com">Facebook</a></li>
+                    <li class="network__item"><a href="LinkedIn.com">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -486,6 +500,7 @@
             </form>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 
