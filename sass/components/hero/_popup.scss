@@ -6,6 +6,8 @@
   width: 100%;
   height: 100%;
 
+  overflow-y: scroll;
+
   background: rgba(0, 0, 0, 0.2);
   z-index: 2;
 
@@ -28,13 +30,19 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  min-width: 528px;
-  min-height: 581px;
+  width: 100%;
+  // min-height: 581px;
 
   background: $main-white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+  }
 }
 
 .form {
@@ -49,11 +57,14 @@
   font-family: inherit;
   font-weight: $rare-text-weight;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
 
   color: #212121;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 .form__item {
   margin-bottom: 10px;
@@ -78,11 +89,15 @@
   color: $primary-text-colour;
 
   font-family: inherit;
-  font-style: normal;
-  font-weight: normal;
+  font-style: inherit;
+  font-weight: $primary-text-weight;
   font-size: 12px;
-  line-height: 14px;
+  line-height: $primary-line-height;
   letter-spacing: 0.01em;
+  @media screen and (min-width: 1200px) {
+    font-size: $primary-text-size;
+    line-height: 1.7;
+  }
 }
 .form__field {
   position: relative;
@@ -146,11 +161,15 @@
 
   color: $primary-text-colour;
   font-family: inherit;
-  font-style: normal;
-  font-weight: normal;
-  font-size: $primary-text-size;
-  line-height: 1.7;
+  font-style: inherit;
+  font-weight: $primary-text-weight;
+  font-size: 12px;
+  line-height: $primary-line-height;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    font-size: $primary-text-size;
+    line-height: 1.7;
+  }
 }
 .agreement__conditions {
   color: $accent;

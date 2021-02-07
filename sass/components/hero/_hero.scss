@@ -12,14 +12,75 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero-image.jpg);
+    url("../images/hero-img-mobile.jpg");
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media screen and (max-width: 1199px) {
+    height: 400px;
+  }
+}
+@media (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-img-mobile@2x.jpg");
+    background-size: cover;
+  }
+}
+@media (min-width: 489px) {
+  .hero__overlay {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-img-tablet.jpg");
+    background-size: cover;
+  }
+  @media (min-resolution: 2dppx) {
+    .hero__overlay {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero-img-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+@media (min-width: 769px) {
+  .hero__overlay {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-img-desktop.jpg");
+    background-size: cover;
+  }
+  @media (min-resolution: 2dppx) {
+    .hero__overlay {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero-img-desktop@2x.jpg");
+      background-size: cover;
+    }
+  }
 }
 .hero__container {
-  padding-top: 200px;
+  padding: 118px 0px;
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0px;
+  }
 }
 .hero__title {
   color: $main-white;

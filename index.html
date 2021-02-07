@@ -15,13 +15,14 @@
         <!-- main navigation-->
         <div class="container header__container">
             <a lang="en" href="/" class="header__logo"><span class="part-web">Web</span>Studio</a>
-            <button type="button" class="header__button is-open" aria-expanded="false" data-menu-button>
+            <button type="button" class="header__button is-open" aria-expanded="false" aria-controls="header__menu"
+                data-menu-button>
                 <svg class="header__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
                     <use class="header__icon--open" href="./images/symbol-defs.svg#icon-menu_40px"></use>
                     <use class="header__icon--close" href="./images/symbol-defs.svg#icon-close_40px"></use>
                 </svg>
             </button>
-            <div class="header__menu is-open">
+            <div class="header__menu" id="header__menu" data-menu>
                 <nav class="navigation">
                     <ul class="navigation__menu list">
                         <li class="navigation__item">
@@ -55,10 +56,10 @@
                     </li>
                 </ul>
                 <ul class="network list">
-                    <li class="network__item"><a href="Instagram.com">Instagram</a></li>
-                    <li class="network__item"><a href="Twitter.com">Twitter</a></li>
-                    <li class="network__item"><a href="Facebook.com">Facebook</a></li>
-                    <li class="network__item"><a href="LinkedIn.com">LinkedIn</a></li>
+                    <li class="network__item"><a class="network__link" href="Instagram.com">Instagram</a></li>
+                    <li class="network__item"><a class="network__link" href="Twitter.com">Twitter</a></li>
+                    <li class="network__item"><a class="network__link" href="Facebook.com">Facebook</a></li>
+                    <li class="network__item"><a class="network__link" href="LinkedIn.com">LinkedIn</a></li>
                 </ul>
             </div>
         </div>

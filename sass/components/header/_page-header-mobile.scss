@@ -1,0 +1,225 @@
+/*page header mobile*/
+@media screen and (max-width: 767px) {
+  .header {
+    position: relative;
+    background-color: $main-white;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .header__container {
+    display: flex;
+
+    align-items: center;
+    justify-items: center;
+
+    width: 100%;
+    @media screen and (max-width: 767px) {
+      height: 60px;
+    }
+  }
+  .header__logo {
+    color: $secondary-text-colour;
+    text-decoration: none;
+    font-family: $secondary-font-family;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: $primary-line-height;
+    letter-spacing: 0.03em;
+
+    display: block;
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
+    // padding-top: 24px;
+    // padding-bottom: 25px;
+  }
+  .header__button {
+    position: absolute;
+    right: 15px;
+    z-index: 3;
+
+    display: block;
+    border-style: unset;
+    background-color: transparent;
+
+    height: 40px;
+    padding: 0;
+    margin-left: auto;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  .header__button {
+    .header__icon--open {
+      display: none;
+    }
+  }
+  .header__button.is-open {
+    .header__icon--open {
+      display: block;
+    }
+  }
+  .header__button.is-open {
+    .header__icon--close {
+      display: none;
+    }
+  }
+
+  .header__icon {
+    fill: #000000;
+  }
+  .header__menu {
+    display: none;
+
+    left: 0;
+    top: 0;
+
+    background-color: $main-white;
+    position: absolute;
+    width: inherit;
+    z-index: 2;
+
+    &.is-open {
+      display: block;
+    }
+  }
+  .navigation {
+    padding-left: 40px;
+    padding-top: 48px;
+    margin-bottom: 306px;
+  }
+
+  .navigation__item:not(:last-child) {
+    margin-right: 50px;
+    margin-bottom: 32px;
+  }
+
+  .navigation__link {
+    color: $secondary-text-colour;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: $rare-text-size;
+    line-height: $primary-line-height;
+    letter-spacing: 0.02em;
+
+    align-items: center;
+    position: relative;
+    &:active,
+    &:hover,
+    &:focus {
+      fill: $accent;
+    }
+    &--current {
+      color: $accent;
+    }
+  }
+  .contacts {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 64px;
+  }
+
+  .contacts__item {
+    &:nth-child(2) {
+      margin-bottom: 32px;
+    }
+  }
+
+  .contacts__link {
+    color: $primary-text-colour;
+
+    text-decoration: none;
+    font-weight: $secondary-font-weight;
+    font-size: $primary-text-size;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &--tel {
+      @media screen and (max-width: 767px) {
+        color: $accent;
+        font-size: 34px;
+        line-height: 1.2;
+      }
+    }
+    &--mail {
+      @media screen and (max-width: 767px) {
+        font-size: 24px;
+        line-height: 1.2;
+      }
+    }
+    &:focus,
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  .contacts__icon-envelope {
+    display: none;
+
+    padding: 0;
+    border: none;
+
+    margin-right: 10px;
+    fill: currentColor;
+
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+  .contacts__icon-phone {
+    display: none;
+
+    padding: 0;
+    border: none;
+
+    margin-right: 10px;
+    fill: currentColor;
+
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+  .network {
+    display: none;
+    padding-left: 40px;
+    padding-bottom: 48px;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .network__item {
+    &:not(:first-child) {
+      padding-left: 10px;
+    }
+    &:not(:last-child) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    padding-right: 10px;
+  }
+  .network__link {
+    font-family: $primary-font-family;
+    font-style: inherit;
+    font-weight: $secondary-font-weight;
+    font-size: 18px;
+    line-height: $primary-line-height;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+    color: $accent;
+  }
+}

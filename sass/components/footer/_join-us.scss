@@ -1,3 +1,8 @@
+.social {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
 .social__title {
   font-weight: 700;
   font-size: $primary-text-size;
@@ -8,12 +13,17 @@
   color: $main-white;
   margin-top: 0;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .solcial__list {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+  // padding-bottom: 30px;
 }
 .solcial__item:not(:last-child) {
   margin-right: 10px;
