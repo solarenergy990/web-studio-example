@@ -1,10 +1,6 @@
 @media screen and (min-width: 768px) {
   .navigation {
     display: flex;
-
-    // padding-left: 40px;
-    // padding-top: 48px;
-    // margin-bottom: 306px;
   }
 
   .navigation__menu {
@@ -16,7 +12,6 @@
     &:not(:last-child) {
       margin-right: 50px;
     }
-    // margin-bottom: 32px;
   }
 
   .navigation__link {
